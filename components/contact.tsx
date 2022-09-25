@@ -30,39 +30,37 @@ const Contact = () => {
          </h3>
 
          <div className="flex flex-col space-y-10">
-            <h4 className="text-4xl font-semibold text-center">
+            <h4 className="mt-10 text-xl md:text-4xl font-semibold text-center">
                I have got just what you need.{" "}
                <span className="decoration-[#f7ab0a]/50 underline">
                   Lets Talk.
                </span>
             </h4>
 
-            <div className="space-y-10">
-               <div className="flex items-center space-x-5 justify-center">
-                  <PhoneIcon className="text-[#f7ab0a] h-7 w-7 animate-pulse" />
-                  <p className="text-2xl">+48517568485</p>
+            <div className="space-y-5">
+               <div className="flex items-center space-x-2 justify-center">
+                  <PhoneIcon className="text-[#f7ab0a] h-4 w-4 md:h-7 md:w-7 animate-pulse" />
+                  <p className="text-md md:text-2xl">+48517568485</p>
                </div>
-               <div className="flex items-center space-x-5 justify-center">
-                  <EnvelopeIcon className="text-[#f7ab0a] h-7 w-7 animate-pulse" />
-                  <p className="text-2xl">kush.bhal1999@gmail.com</p>
+               <div className="flex items-center space-x-2 justify-center">
+                  <EnvelopeIcon className="text-[#f7ab0a] h-4 w-4 md:h-7 md:w-7 animate-pulse" />
+                  <p className="text-md md:text-2xl">kush.bhal1999@gmail.com</p>
                </div>
-               <div className="flex items-center space-x-5 justify-center">
-                  <MapPinIcon className="text-[#f7ab0a] h-7 w-7 animate-pulse" />
-                  <p className="text-2xl">Warsaw Poland</p>
+               <div className="flex items-center space-x-2 justify-center">
+                  <MapPinIcon className="text-[#f7ab0a] h-4 w-4 md:h-7 md:w-7 animate-pulse" />
+                  <p className="text-md md:text-2xl">Warsaw Poland</p>
                </div>
             </div>
 
             <form
                onSubmit={handleSubmit(onSubmit)}
-               className="flex flex-col space-y-2 w-fit mx-auto"
+               className="flex flex-col space-y-2 w-[350px] md:w-fit mx-auto"
             >
-               <div className="flex space-x-2">
+               <div className="grid grid-cols-2 space-x-2">
                   <input
                      {...register("name", { required: true })}
                      placeholder="Name"
-                     className={`contact-input ${
-                        errors.name ? "border border-b-red-500" : ""
-                     }`}
+                     className={`contact-input ${errors.name ? "border border-b-red-500" : ""}`}
                      type="text"
                   />
                   <input
@@ -71,26 +69,20 @@ const Contact = () => {
                         pattern: emailRegex,
                      })}
                      placeholder="Email"
-                     className={`contact-input ${
-                        errors.email ? "border border-b-red-500" : ""
-                     }`}
+                     className={`contact-input ${errors.email ? "border border-b-red-500" : ""}`}
                      type="email"
                   />
                </div>
                <input
                   {...register("subject", { required: true })}
                   placeholder="Subject"
-                  className={`contact-input ${
-                     errors.subject ? "border border-b-red-500" : ""
-                  }`}
+                  className={`contact-input ${errors.subject ? "border border-b-red-500" : ""}`}
                   type="text"
                />
                <textarea
                   {...register("message", { required: true })}
                   placeholder="Message"
-                  className={`contact-input ${
-                     errors.message ? "border border-b-red-500" : ""
-                  }`}
+                  className={`contact-input ${errors.message ? "border border-b-red-500" : ""}`}
                />
                <button
                   type="submit"
