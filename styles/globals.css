@@ -4,7 +4,7 @@
 
 @layer components {
     .hero-btn {
-        @apply px-6 py-6 border border-[#242424] rounded-full uppercase text-center tracking-widest text-gray-500 transition-all;
+        @apply text-sm px-2 md:px-6 py-6 border border-[#242424] uppercase text-center tracking-widest text-gray-500 transition-all;
     }
 
   .contact-input {
