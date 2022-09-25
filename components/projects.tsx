@@ -11,7 +11,7 @@ interface Props {
 
 const Projects = ({ projects}: Props) => {
     return (
-        <div className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0">
+        <div className="h-screen relative flex overflow-hidden flex-col text-center md:flex-row max-w-full justify-evenly mx-auto items-center z-0">
             <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
                 Projects
             </h3>
@@ -28,20 +28,20 @@ const Projects = ({ projects}: Props) => {
                             viewport={{ once: true }}
                             src={urlFor(project?.image).url()} 
                             alt="" 
-                            className="h-[200px] w-[400px]"
+                            className="md:h-[200px] w-[400px]"
                         />
                         <div className="space-y-10 px-0 md:px-10 max-w-6xl">
-                            <h4 className="text-4xl font-semibold text-center">
+                            <h4 className="text-xl md:text-4xl font-semibold text-center">
                                 <span className="underline decoration-[#f7ab0a]/50">
                                     Case Study {i + 1} of {projects?.length}:
                                 </span>
                                 {" "} {project?.title}
                             </h4>
                         </div>
-                        <p className="text-lg text-center md:text-left">
+                        <p className="text-md md:text-lg text-center md:text-left">
                             {project?.summary}
                         </p>
-                        <Link href={project?.linkToBuild}>Link to Project</Link>
+                        <Link href={project?.linkToBuild}><p className='text-sm'>Link to Project</p></Link>
                     </div>
                 ))}
             </div>
