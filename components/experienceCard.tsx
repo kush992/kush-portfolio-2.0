@@ -29,7 +29,7 @@ const ExperienceCard = ({ experience }: Props) => {
                 </div>
                 <p className='uppercase py-5 text-gray-300 text-[12px] md:text-md'>{experience?.dateStarted} - {experience?.isCurrentlyWorking ? 'present' : experience?.dateEnded}</p>
 
-                <ul className='list-disc space-y-4 ml-5 text-sm md:text-lg h-96 overflow-y-scroll scrollbar scrollbar-none'>
+                <ul className='list-disc space-y-2 text-sm md:text-lg h-96 overflow-y-scroll scrollbar-thin scrollbar-track-transparent scrollbar-thumb-[#f7ab0a]/80'>
                     {experience.points?.map((point, key)=>(
                         <li key={key} className='text-[14px] leading-5'>{point}</li>
                     ))}
