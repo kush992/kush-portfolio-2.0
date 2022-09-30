@@ -7,7 +7,7 @@ interface Props {
     skills: Skill[];
 }
 
-const Skills = ({skills }: Props) => {
+const Skills = ({ skills }: Props) => {
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -23,8 +23,8 @@ const Skills = ({skills }: Props) => {
             </h3>
 
             <div className="grid grid-cols-4 gap-5">
-                {skills?.map((skill)=>(
-                    <SkillCircle key={skill?._id} skill={skill}/>
+                {skills?.map((skill) => (
+                    <SkillCircle key={skill?._id} skill={skill} />
                 ))}
             </div>
         </motion.div>

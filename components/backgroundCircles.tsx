@@ -1,9 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
-type Props = {}
-
-const BackgroundCircles = ({ }: Props) => {
+const BackgroundCircles = () => {
     return (
         <motion.div
             initial={{

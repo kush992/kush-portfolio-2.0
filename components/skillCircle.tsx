@@ -4,11 +4,10 @@ import { Skill } from "../typings";
 import { urlFor } from "../sanity";
 
 interface Props {
-  directionLeft?: boolean;
   skill: Skill;
 }
 
-const SkillCircle = ({ directionLeft, skill }: Props) => {
+const SkillCircle = ({ skill }: Props) => {
   return (
     <div className="group relative flex cursor-pointer">
       <motion.img

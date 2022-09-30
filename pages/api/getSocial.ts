@@ -5,12 +5,12 @@ import { Social } from "../../typings";
 
 const query = groq`*[_type == "social"]`;
 interface Data {
-    socials: Social[]
+  socials: Social[]
 }
 export default async function handler(
-    req: NextApiRequest,
-    res: NextApiResponse<Data>
-  ) {
-    const socials: Social[] = await sanityClient.fetch(query)
-    res.status(200).json({ socials })
-  }
+  req: NextApiRequest,
+  res: NextApiResponse<Data>
+) {
+  const socials: Social[] = await sanityClient.fetch(query)
+  res.status(200).json({ socials })
+}

@@ -46,7 +46,7 @@ export default {
       name: "points",
       title: "Points",
       type: "array",
-      of: [{ type: 'string' }],
+      of: [{ type: "string" }],
     },
     // {
     //   name: "profilePic",

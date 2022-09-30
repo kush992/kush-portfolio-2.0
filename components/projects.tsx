@@ -9,7 +9,7 @@ interface Props {
     projects: Project[];
 }
 
-const Projects = ({ projects}: Props) => {
+const Projects = ({ projects }: Props) => {
     return (
         <div className="h-screen relative flex overflow-hidden flex-col text-center md:flex-row max-w-full justify-evenly mx-auto items-center z-0">
             <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
@@ -26,8 +26,8 @@ const Projects = ({ projects}: Props) => {
                             whileInView={{ y: 1, opacity: 1 }}
                             transition={{ duration: 1.2 }}
                             viewport={{ once: true }}
-                            src={urlFor(project?.image).url()} 
-                            alt="" 
+                            src={urlFor(project?.image).url()}
+                            alt=""
                             className="md:h-[200px] w-[400px]"
                         />
                         <div className="space-y-10 px-0 md:px-10 max-w-6xl">

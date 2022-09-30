@@ -11,7 +11,7 @@ interface Props {
     pageInfo: PageInfo
 }
 
-const Hero = ({ pageInfo}: Props) => {
+const Hero = ({ pageInfo }: Props) => {
     const [text] = useTypewriter({
         words: [
             'Hillow hillow, Kush this side!!!!',
