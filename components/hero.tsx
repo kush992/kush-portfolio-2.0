@@ -38,8 +38,8 @@ const Hero = ({ pageInfo }: Props) => {
                 </h1>
 
             </div>
-            <div className='pt-5 flex'>
-                <a href="#about"><button className='hero-btn'>About</button></a>
+            <div className='pt-5 flex z-10'>
+                <a href="#about"><p className='hero-btn'>About</p></a>
                 <a href="#experience"><p className='hero-btn'>Experience</p></a>
                 <a href="#skills"><p className='hero-btn'>Skills</p></a>
                 <a href="#projects"><p className='hero-btn'>Projects</p></a>
