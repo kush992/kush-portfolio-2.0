@@ -28,7 +28,7 @@ export interface PageInfo extends SanityBody {
 export interface Skill extends SanityBody {
   _type: "skill";
   image: Image;
-  progress: mumber;
+  progress?: mumber;
   title: string;
 }
 
