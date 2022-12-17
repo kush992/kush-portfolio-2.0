@@ -34,6 +34,7 @@ const Contact = () => {
             </div>
 
             <ContactForm />
+            <p>KUSH BHALODI</p>
          </div>
       </div>
    );
