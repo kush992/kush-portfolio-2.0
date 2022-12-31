@@ -8,13 +8,13 @@ import { PageInfo } from '../typings'
 import BackgroundCircles from './backgroundCircles'
 
 interface Props {
-    pageInfo: PageInfo
+    pageInfo: PageInfo;
 }
 
 const Hero = ({ pageInfo }: Props) => {
     const [text] = useTypewriter({
         words: [
-            'Hillow hillow, Kush this side!!!!',
+            'Ellloooo, Kush this side!!!!',
             'Tea.tsx',
             '<ProfessionalReactDeveloper />'
         ],

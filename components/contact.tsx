@@ -25,7 +25,9 @@ const Contact = () => {
                </div>
                <div className="flex items-center space-x-2 justify-center">
                   <EnvelopeIcon className="text-[#f7ab0a] h-4 w-4 md:h-7 md:w-7 animate-pulse" />
-                  <p className="text-md md:text-2xl">kush.bhal1999@gmail.com</p>
+                  <p className="text-md md:text-2xl">
+                    <a href="mailto:kush.bhal1999@gmail.com">kush.bhal1999@gmail.com</a>
+                  </p>
                </div>
                <div className="flex items-center space-x-2 justify-center">
                   <MapPinIcon className="text-[#f7ab0a] h-4 w-4 md:h-7 md:w-7 animate-pulse" />
